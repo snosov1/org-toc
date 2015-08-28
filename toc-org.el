@@ -321,7 +321,7 @@ following tag formats:
 
   (interactive)
   (when (eq major-mode 'org-mode)
-    (save-excursion
+    (let ((old-point (point)))
       (goto-char (point-min))
       (let* ((case-fold-search t)
              (toc-heading (re-search-forward toc-org-toc-org-regexp
@@ -364,7 +364,8 @@ following tag formats:
                       (goto-char toc-heading)
                       (org-cycle)
                       (org-cycle))))
-              (message (concat "Hrefify function " hrefify-string " is not found")))))))))
+              (message (concat "Hrefify function " hrefify-string " is not found"))))))
+      (goto-char old-point))))
 
 ;;;###autoload
 (defun toc-org-enable ()
