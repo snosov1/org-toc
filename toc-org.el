@@ -350,20 +350,25 @@ following tag formats:
 
                     ;; insert newline if TOC is currently empty
                     (when (looking-at "^\\*")
-                      (open-line 1))
+                      (open-line 1)
+                      (setq old-point (1+ old-point)))
 
                     ;; remove previous TOC
-                    (delete-region (point)
-                                   (save-excursion
-                                     (when (search-forward-regexp "^\\*" (point-max) t)
-                                       (forward-line -1))
-                                     (end-of-line)
-                                     (point)))
-                    (insert new-toc)
-                    (when foldedp
-                      (goto-char toc-heading)
-                      (org-cycle)
-                      (org-cycle))))
+                    (let ((beg (point))
+                          (end (save-excursion
+                                 (when (search-forward-regexp "^\\*" (point-max) t)
+                                   (forward-line -1))
+                                 (end-of-line)
+                                 (point))))
+                      (delete-region beg end)
+                      (insert new-toc)
+                      (setq old-point (+ old-point
+                                         (- (length new-toc)
+                                            (- end beg))))
+                      (when foldedp
+                        (goto-char toc-heading)
+                        (org-cycle)
+                        (org-cycle)))))
               (message (concat "Hrefify function " hrefify-string " is not found"))))))
       (goto-char old-point))))
 
