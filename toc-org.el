@@ -282,7 +282,7 @@ each heading into a link."
   (should (equal (toc-org-flush-subheadings "* About\n* Installation\n** via package.el\n** Manual\n* Use\n* Different href styles\n* Example\n" 3)
                  "* About\n* Installation\n** via package.el\n** Manual\n* Use\n* Different href styles\n* Example\n")))
 
-(defun toc-org-folded-heading-p ()
+(defun toc-org-heading-folded-p ()
   "Non-nil when heading at point is (partially) folded."
   (save-excursion
     (org-back-to-heading)
@@ -290,9 +290,12 @@ each heading into a link."
           (next-headline (save-excursion (org-end-of-subtree t t)))
           (pos (point))
           positions)
+      ;; scan between the end of the headline and end of the subtree
+      ;; for invisible text
       (while (< pos next-headline)
         (setq pos (next-single-char-property-change pos 'invisible
                                                     nil next-headline))
+        ;; if the invisible text is a folded outline, append to results
         (when (eq (get-char-property pos 'invisible) 'outline)
           (push pos positions)))
       positions)))
@@ -329,7 +332,7 @@ following tag formats:
         ;; find the first heading with the :TOC: tag
         (when toc-heading
           (let* ((tag (match-string 1))
-                 (foldedp (toc-org-folded-heading-p))
+                 (was-folded (toc-org-heading-folded-p))
                  (depth (if tag
                             (- (aref tag 1) ?0) ;; is there a better way to convert char to number?
                           toc-org-max-depth))
@@ -365,7 +368,9 @@ following tag formats:
                       (setq old-point (+ old-point
                                          (- (length new-toc)
                                             (- end beg))))
-                      (when foldedp
+                      (when was-folded
+                        ;; return to previous folding state by
+                        ;; visiting the heading and cycling twice
                         (goto-char toc-heading)
                         (org-cycle)
                         (org-cycle)))))
