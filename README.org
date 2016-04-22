@@ -14,9 +14,9 @@
  - [[#requests][Requests]]
    - [[#messagelist][message:list]]
  - [[#events][Events]]
-   - [[#messagelist][message:list]]
+   - [[#messagelist-1][message:list]]
  - [[#messages][Messages]]
-   - [[#messagelist][message:list]]
+   - [[#messagelist-2][message:list]]
 
 * General
 ** Authentication
