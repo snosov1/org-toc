@@ -15,10 +15,14 @@
    - [[#messagelist][message:list]]
  - [[#events][Events]]
    - [[#messagelist][message:list]]
+ - [[#messages][Messages]]
+   - [[#messagelist][message:list]]
 
 * General
 ** Authentication
 * Requests
 ** message:list
 * Events
+** message:list
+* Messages
 ** message:list
