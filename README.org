@@ -1,7 +1,5 @@
 #+TITLE: NOTE: The package was renamed to toc-org and moved to https://github.com/snosov1/toc-org Please, update your configuration files!
 
-#+OPTIONS: todo:t
-
 [[https://github.com/VladimirAlexiev/VladimirAlexiev.github.io/blob/master/Multisensor/validation.org][Github Source]], [[http://VladimirAlexiev.github.io/Multisensor/validation.html][HTML Rendered version]]
 
 * Table of Contents                                                     :TOC_5:
