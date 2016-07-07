@@ -2,11 +2,13 @@
 
 [[https://github.com/VladimirAlexiev/VladimirAlexiev.github.io/blob/master/Multisensor/validation.org][Github Source]], [[http://VladimirAlexiev.github.io/Multisensor/validation.html][HTML Rendered version]]
 
+#+OPTIONS: todo:t
+
 * Table of Contents                                                     :TOC_5:
  - [[#intro][Intro]]
    - [[#queries][Queries]]
- - [[#validation-116][Validation [1/16]]]
-   - [[#entity-linking-service-01][Entity Linking Service [0/1]]]
+ - [[#validation-116][Validation]]
+   - [[#entity-linking-service-01][Entity Linking Service]]
      - [[#underscores-to-spaces][Underscores to Spaces]]
 
 * Intro
