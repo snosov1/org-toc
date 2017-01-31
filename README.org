@@ -2,8 +2,6 @@
 
 [[https://github.com/VladimirAlexiev/VladimirAlexiev.github.io/blob/master/Multisensor/validation.org][Github Source]], [[http://VladimirAlexiev.github.io/Multisensor/validation.html][HTML Rendered version]]
 
-#+OPTIONS: todo:t
-
 * Table of Contents                                                     :TOC_5:
  - [[#intro][Intro]]
    - [[#queries][Queries]]
