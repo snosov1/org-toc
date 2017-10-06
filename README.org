@@ -3,16 +3,16 @@
 #+STARTUP: showall align
 #+OPTIONS: todo:nil tasks:all tags:nil
 #+EXCLUDE_TAGS: TOC_3
-#+TODO: CANCER TODO | DONE
+#+TODO: CANCER SHMANCER | PARTY
 
 * Sumário                                                             :TOC_3:
 :PROPERTIES:
 :CUSTOM_ID: toc-org
 :END:
-- [[#task1][Task1]]
-- [[#task3][Task3]]
-- [[#cancer-task2][CANCER Task2]]
-- [[#cancer-task3][CANCER Task3]]
+ - [[#task1][Task1]]
+ - [[#task3][Task3]]
+ - [[#cancer-task2][CANCER Task2]]
+ - [[#cancer-task3][CANCER Task3]]
 
 * DONE Task1
   CLOSED: [2017-09-08 Fri 01:46]
