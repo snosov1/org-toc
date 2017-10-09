@@ -1,21 +1,21 @@
 #+TITLE: NOTE: The package was renamed to toc-org and moved to https://github.com/snosov1/toc-org Please, update your configuration files!
 
-#+STARTUP: showall align
-#+OPTIONS: todo:nil tasks:all tags:nil
-#+EXCLUDE_TAGS: TOC_3
-#+TODO: CANCER SHMANCER | PARTY
+* toc :toc:noexport:
+- [[#hheading-1][h=Heading 1]]
+  - [[#h1-header][h1. Header]]
+  - [[#h2-header][h2. Header]]
+- [[#zheading-2][z=Heading 2]]
+  - [[#z1-header][z1. Header]]
 
-* Sumário                                                             :TOC_3:
-:PROPERTIES:
-:CUSTOM_ID: toc-org
-:END:
- - [[#task1][Task1]]
- - [[#task3][Task3]]
- - [[#cancer-task2][CANCER Task2]]
- - [[#cancer-task3][CANCER Task3]]
+* h=Heading 1
 
-* DONE Task1
-  CLOSED: [2017-09-08 Fri 01:46]
-* TODO Task3
-* CANCER Task2
-* CANCER Task3
+** h1. Header
+Text
+
+** h2. Header
+More text
+
+* z=Heading 2
+
+** z1. Header
+Other text
