@@ -7,21 +7,36 @@
 :UNNUMBERED: t
 :END:
 
- - [[#hheading-1][h=Heading 1]]
-   - [[#h1-header][h1. Header]]
-   - [[#h2-header][h2. Header]]
- - [[#zheading-2][z=Heading 2]]
-   - [[#z1-header][z1. Header]]
+ - [[#h1][H1]]
+   - [[#h2][H2]]
+   - [[#h3][H3]]
+ - [[#h4][H4]]
+   - [[#h5][H5]]
 
-* h=Heading 1
+* H1
+:PROPERTIES:
+:CUSTOM_ID: h1
+:END:
 
-** h1. Header
+** H2
+:PROPERTIES:
+:CUSTOM_ID: h2
+:END:
 Text
 
-** h2. Header
+** H3
+:PROPERTIES:
+:CUSTOM_ID: h3
+:END:
 More text
 
-* z=Heading 2
+* H4
+:PROPERTIES:
+:CUSTOM_ID: h4
+:END:
 
-** z1. Header
+** H5
+:PROPERTIES:
+:CUSTOM_ID: h5
+:END:
 Other text
