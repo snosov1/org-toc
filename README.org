@@ -2,7 +2,7 @@
 
 #+OPTIONS: num:t
 
-* toc :toc:
+* toc :toc:noexport:
 :PROPERTIES:
 :UNNUMBERED: t
 :END:
