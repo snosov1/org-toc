@@ -3,6 +3,10 @@
 #+OPTIONS: num:t
 
 * toc :toc:
+:PROPERTIES:
+:UNNUMBERED: t
+:END:
+
  - [[#hheading-1][h=Heading 1]]
    - [[#h1-header][h1. Header]]
    - [[#h2-header][h2. Header]]
