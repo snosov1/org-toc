@@ -1,16 +1,7 @@
-#+TODO: TODO(t) | DONE(d!)
+* toc :TOC:
+- [[#headline][headline]]
 
-* About
-* Table of Contents                                           :TOC:
-- [[#about][About]]
-- [[#installation][Installation]]
-  - [[#via-packageel][via package.el]]
-  - [[#manual][Manual]]
-- [[#todo-use][TODO Use]]
-- [[#example][Example]]
-
-* Installation
-** via package.el
-** Manual
-* TODO Use
-* Example
+* headline
+:PROPERTIES:
+:CUSTOM_ID: id
+:END:
