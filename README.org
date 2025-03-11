@@ -10,6 +10,8 @@ The package was renamed to toc-org and moved to https://github.com/snosov1/toc-o
 * Task headline [2/2]
 ** DONE Subtask headline
 ** DONE Another subtask headline
-* Archive headline :ARCHIVE:
+* Archive headline :ARCHIVE:noexport_1:
+** DONE Sub 1
+*** DONE Sub 2
 * No Export headline :noexport:
 * Archive and No Export                                             :ARCHIVE:noexport:
