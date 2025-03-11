@@ -5,7 +5,10 @@ The package was renamed to toc-org and moved to https://github.com/snosov1/toc-o
 - [[#task-headline-22][Task headline]]
   - [[#subtask-headline][Subtask headline]]
   - [[#another-subtask-headline][Another subtask headline]]
+- [[#archive-headline][Archive headline]]
 
 * Task headline [2/2]
 ** DONE Subtask headline
 ** DONE Another subtask headline
+* Archive headline :ARCHIVE:
+* No Export headline :noexport:
