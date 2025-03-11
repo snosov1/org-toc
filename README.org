@@ -12,3 +12,4 @@ The package was renamed to toc-org and moved to https://github.com/snosov1/toc-o
 ** DONE Another subtask headline
 * Archive headline :ARCHIVE:
 * No Export headline :noexport:
+* Archive and No Export                                             :ARCHIVE:noexport:
